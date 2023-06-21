@@ -100,13 +100,14 @@ body {
     font-size: 7.5rem; }
   .heading-secondary {
     font-size: 1.9rem;
-    padding-top: 1rem; } }
+    padding-top: 1rem;
+    letter-spacing: 0.5rem; } }
 
 @media screen and (min-width: 68.75em) {
   .heading-primary {
-    font-size: 8rem; }
+    font-size: 9rem; }
   .heading-secondary {
     font-size: 2.2rem;
-    padding-top: 1rem; }
+    padding-top: 2.4rem; }
   .container-primary {
     padding-top: 7rem; } }
