@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-weight: 700; }
+
+body {
+  background-color: #000080; }
+
+.container-primary {
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: 0 auto; }
+
+.container-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: 'TayBasal', sans-serif; }
+
+.container-paragraph {
+  padding-top: 4rem;
+  font-family: 'Gotham', sans-serif;
+  letter-spacing: 0.05rem;
+  line-height: 1.5; }
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+  font-family: 'Gotham', sans-serif; }
+
+.heading-primary {
+  color: white;
+  font-size: 4rem;
+  letter-spacing: 0.15rem; }
+
+.heading-secondary {
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+  padding-top: 1rem; }
+
+.paragraph {
+  color: white;
+  font-size: 1.4rem; }
+  .paragraph-footer {
+    text-decoration: none; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url(../fonts/Gotham-Medium.otf);
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TayBasal';
+  src: url(../fonts/TayBasal.otf);
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (min-width: 31.25em) {
+  .heading-primary {
+    color: white;
+    font-size: 5rem;
+    letter-spacing: 0.15rem; }
+  .heading-secondary {
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    padding-top: 1rem; }
+  .paragraph {
+    color: white;
+    font-size: 1.6rem; } }
+
+@media screen and (min-width: 37.5em) {
+  .heading-primary {
+    font-size: 6.5rem;
+    letter-spacing: 0.55rem; }
+  .heading-secondary {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    padding-top: 1rem; }
+  .paragraph {
+    font-size: 1.8rem; } }
+
+@media screen and (min-width: 56.25em) {
+  .heading-primary {
+    font-size: 7.5rem; }
+  .heading-secondary {
+    font-size: 1.9rem;
+    padding-top: 1rem; } }
+
+@media screen and (min-width: 68.75em) {
+  .heading-primary {
+    font-size: 8rem; }
+  .heading-secondary {
+    font-size: 2.2rem;
+    padding-top: 1rem; }
+  .container-primary {
+    padding-top: 7rem; } }

@@ -1,0 +1,143 @@
+@import '_variables.scss';
+.container {
+  //Page Container
+  &-primary {
+    padding: 3rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  //Title Container
+  &-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'TayBasal', sans-serif;
+  }
+  //Paragraph container
+  &-paragraph {
+    padding-top: 4rem;
+    font-family: 'Gotham', sans-serif;
+    letter-spacing: 0.05rem;
+    line-height: 1.5;
+  }
+  //Footer contianer (email link)
+  &-footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    font-family: 'Gotham', sans-serif;
+  }
+}
+//Main Title
+.heading {
+  &-primary {
+    color: white;
+    font-size: 4rem;
+    letter-spacing: 0.15rem;
+  }
+  &-secondary {
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+    padding-top: 1rem;
+  }
+}
+
+//Paragraph Text
+.paragraph {
+  color: white;
+  font-size: 1.4rem;
+
+  &-footer {
+    text-decoration: none;
+  }
+}
+
+//Fonts
+@font-face {
+  font-family: 'Gotham';
+  src: url(../fonts/Gotham-Medium.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TayBasal';
+  src: url(../fonts/TayBasal.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+//Media Queries
+@media screen and (min-width: $bp-smallest) {
+  //Main Title
+  .heading {
+    &-primary {
+      color: white;
+      font-size: 5rem;
+      letter-spacing: 0.15rem;
+    }
+    &-secondary {
+      color: white;
+      font-size: 1.5rem;
+      letter-spacing: 0.3rem;
+      padding-top: 1rem;
+    }
+  }
+
+  //Paragraph Text
+  .paragraph {
+    color: white;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: $bp-small) {
+  .heading {
+    &-primary {
+      font-size: 6.5rem;
+      letter-spacing: 0.55rem;
+    }
+    &-secondary {
+      font-size: 1.5rem;
+      letter-spacing: 0.3rem;
+      padding-top: 1rem;
+    }
+  }
+  //Paragraph Text
+  .paragraph {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: $bp-medium) {
+  .heading {
+    &-primary {
+      font-size: 7.5rem;
+    }
+    &-secondary {
+      font-size: 1.9rem;
+      padding-top: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: $bp-large) {
+  .heading {
+    &-primary {
+      font-size: 8rem;
+    }
+    &-secondary {
+      font-size: 2.2rem;
+      padding-top: 1rem;
+    }
+  }
+
+  .container {
+    //Page Container
+    &-primary {
+      padding-top: 7rem;
+    }
+  }
+}
